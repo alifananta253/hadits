@@ -1,8 +1,9 @@
+
 const paginate = (
   totalItems,
   currentPage = 1,
-  pageSize = 10,
-  maxPages = 10
+  pageSize = 1000,
+  maxPages = 1000
 ) => {
   const totalPages = Math.ceil(totalItems / pageSize);
 

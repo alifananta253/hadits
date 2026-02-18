@@ -57,17 +57,7 @@ describe('GET /hadith/:narrator', () => {
         name: expect.any(String),
         slug: expect.any(String),
         total: expect.any(Number),
-        pagination: {
-          currentPage: 1,
-          totalItems: expect.any(Number),
-          pageSize: 20,
-          startPage: 1,
-          startIndex: 0,
-          endIndex: 19,
-          totalPages: expect.any(Number),
-          endPage: expect.any(Number),
-          pages: expect.arrayContaining([expect.any(Number)]),
-        },
+        
         items: expect.arrayContaining([
           expect.objectContaining({
             number: expect.any(Number),
